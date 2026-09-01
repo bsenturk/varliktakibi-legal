@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1d4ed8">
+<title>Gizlilik Politikası — Varlık Takibi</title>
+<meta name="description" content="Varlık Takibi iOS ve Android uygulamalarının gizlilik politikası. Geliştirici: Burak Ahmet Şentürk.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="app">Varlık Takibi</div>
+  <h1>Gizlilik Politikası</h1>
+  <p class="platforms">iOS (App Store) ve Android (Google Play) uygulamaları için geçerlidir</p>
+  <p class="meta">Son güncelleme: 1 Eylül 2026</p>
+</header>
+
+<main>
+
+<div class="card accent">
+  <p><strong>Uygulama:</strong> Varlık Takibi<br>
+  <strong>Platformlar:</strong> iOS (Apple App Store) ve Android (Google Play)<br>
+  <strong>Android paket adı:</strong> <code>com.xptlabs.varliktakibi</code><br>
+  <strong>Geliştirici / veri sorumlusu:</strong> Burak Ahmet Şentürk<br>
+  <strong>İletişim:</strong> <a href="mailto:buraksenturktr@icloud.com">buraksenturktr@icloud.com</a></p>
+  <p>Bu gizlilik politikası, Apple App Store ve Google Play'de <strong>Burak Ahmet
+  Şentürk</strong> tarafından yayımlanan <strong>Varlık Takibi</strong> adlı mobil
+  uygulamanın iOS ve Android sürümleri için geçerlidir.</p>
+</div>
+
+<h2>1. Özet</h2>
+<p>Varlık Takibi hesap açmanızı istemez. Portföyünüz, varlıklarınız, alış fiyatlarınız ve
+notlarınız <strong>yalnızca cihazınızda</strong> saklanır; bu veriler sunucularımıza
+gönderilmez. Uygulama yalnızca çalışması, çökmeleri gidermesi, reklam gösterebilmesi ve
+bildirim gönderebilmesi için gereken sınırlı teknik veriyi toplar. Bu yaklaşım her iki
+platformda da aynıdır; aradaki tek fark, iOS ve Android'in kullandığı kimlik
+teknolojileridir.</p>
+
+<h2>2. Cihazda kalan veriler</h2>
+<p>Aşağıdaki veriler cihazınızın yerel veritabanında tutulur (Android'de Room, iOS'ta
+Core Data), cihazdan dışarı çıkmaz ve tarafımızca görülemez:</p>
+<ul>
+  <li>Oluşturduğunuz portföyler ve portföy adları</li>
+  <li>Eklediğiniz varlıklar, adetleri, alış fiyatları ve alış tarihleri</li>
+  <li>Uygulama tercihleriniz (para birimi, tema, bildirim ayarları)</li>
+  <li>Günlük portföy anlık görüntüleri (geçmiş grafiği için)</li>
+</ul>
+<p>Uygulamayı sildiğinizde bu veriler cihazınızdan silinir. Cihaz yedeklemesi açıksa,
+işletim sisteminin kendi yedekleme mekanizması (iOS'ta iCloud Yedekleme, Android'de
+Google Yedekleme) bu verileri yedekleyebilir; söz konusu yedekler Apple'ın veya
+Google'ın gizlilik politikalarına tabidir ve tarafımızca erişilemez.</p>
+
+<h2>3. Toplanan ve işlenen veriler</h2>
+<div class="wrap">
+<table>
+  <thead>
+    <tr><th>Veri türü</th><th>Platform farkı</th><th>Amaç</th><th>Kim işliyor</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Veri türü">Reklam kimliği</td>
+      <td data-label="Platform farkı"><span class="pill">iOS</span> IDFA — yalnızca izleme izni (ATT) verilirse<br>
+          <span class="pill">Android</span> Advertising ID (AAID)</td>
+      <td data-label="Amaç">Ücretsiz sürümde reklam gösterimi ve reklam ölçümü</td>
+      <td data-label="Kim işliyor">Google AdMob</td>
+    </tr>
+    <tr>
+      <td data-label="Veri türü">Cihaz kimliği</td>
+      <td data-label="Platform farkı"><span class="pill">iOS</span> Satıcı tanımlayıcısı (identifierForVendor)<br>
+          <span class="pill">Android</span> Android ID</td>
+      <td data-label="Amaç">Bildirimi doğru cihaza yönlendirmek, aynı cihazın tekrarını önlemek</td>
+      <td data-label="Kim işliyor">Supabase</td>
+    </tr>
+    <tr>
+      <td data-label="Veri türü">Bildirim jetonu</td>
+      <td data-label="Platform farkı"><span class="pill">iOS</span> APNs üzerinden FCM jetonu<br>
+          <span class="pill">Android</span> FCM jetonu</td>
+      <td data-label="Amaç">Fiyat ve piyasa bildirimlerini göndermek</td>
+      <td data-label="Kim işliyor">Firebase Cloud Messaging, Supabase</td>
+    </tr>
+    <tr>
+      <td data-label="Veri türü">Uygulama etkileşimleri</td>
+      <td data-label="Platform farkı">Her iki platformda aynı olay adları</td>
+      <td data-label="Amaç">Hangi ekranların kullanıldığını anlamak, ürünü iyileştirmek</td>
+      <td data-label="Kim işliyor">Firebase Analytics</td>
+    </tr>
+    <tr>
+      <td data-label="Veri türü">Çökme günlükleri ve tanılama</td>
+      <td data-label="Platform farkı">Her iki platformda aynı</td>
+      <td data-label="Amaç">Hataları tespit edip gidermek</td>
+      <td data-label="Kim işliyor">Firebase Crashlytics</td>
+    </tr>
+    <tr>
+      <td data-label="Veri türü">Satın alma geçmişi / abonelik durumu</td>
+      <td data-label="Platform farkı"><span class="pill">iOS</span> App Store (StoreKit)<br>
+          <span class="pill">Android</span> Google Play Billing</td>
+      <td data-label="Amaç">Varlık Pro aboneliğini doğrulamak ve geri yüklemek</td>
+      <td data-label="Kim işliyor">RevenueCat, Apple, Google</td>
+    </tr>
+    <tr>
+      <td data-label="Veri türü">Yaklaşık konum ve cihaz bilgisi (IP üzerinden türetilen)</td>
+      <td data-label="Platform farkı">Her iki platformda aynı</td>
+      <td data-label="Amaç">Reklam ve analitik sağlayıcılarının standart işleyişi</td>
+      <td data-label="Kim işliyor">Google AdMob, Firebase</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p><strong>Toplamadığımız veriler:</strong> ad-soyad, e-posta adresi, telefon numarası,
+kimlik bilgisi, banka veya kredi kartı bilgisi, hassas konum, rehber, fotoğraf, mesaj.
+Analitik olayları portföyünüzün <strong>tutarını, değerini veya kâr-zararını
+içermez</strong>.</p>
+
+<h2>4. iOS'ta izleme izni (App Tracking Transparency)</h2>
+<div class="card">
+  <p>iOS sürümünde, kişiselleştirilmiş reklam gösterebilmek için Apple'ın <strong>App
+  Tracking Transparency</strong> izni istenir. Bu izni <strong>vermeniz zorunlu
+  değildir</strong>:</p>
+  <ul>
+    <li><strong>İzin verirseniz</strong> reklam kimliğiniz (IDFA) reklam ortaklarıyla
+      paylaşılır ve ilgi alanlarınıza uygun reklamlar gösterilir.</li>
+    <li><strong>İzin vermezseniz</strong> IDFA toplanmaz; uygulama tüm özellikleriyle
+      çalışmaya devam eder, reklamlar yalnızca kişiselleştirilmemiş olarak gösterilir.</li>
+  </ul>
+  <p>Kararınızı istediğiniz zaman <em>Ayarlar → Gizlilik ve Güvenlik → İzleme</em>
+  bölümünden değiştirebilirsiniz.</p>
+</div>
+
+<h2>5. Verilerin paylaşımı</h2>
+<p>Verilerinizi satmıyoruz. Yukarıdaki tabloda belirtilen sınırlı teknik veriler, yalnızca
+ilgili hizmeti sağlayabilmek için aşağıdaki hizmet sağlayıcılarla paylaşılır:</p>
+<ul>
+  <li><strong>Google AdMob</strong> — reklam gösterimi (reklam kimliği reklam
+    ortaklarıyla paylaşılır) ·
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Gizlilik politikası</a></li>
+  <li><strong>Google Firebase</strong> (Analytics, Crashlytics, Cloud Messaging) ·
+    <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Gizlilik politikası</a></li>
+  <li><strong>RevenueCat</strong> — abonelik yönetimi (iOS ve Android ortak) ·
+    <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Gizlilik politikası</a></li>
+  <li><strong>Supabase</strong> — piyasa verisi sunumu ve bildirim jetonu kaydı ·
+    <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Gizlilik politikası</a></li>
+  <li><strong>Apple</strong> — iOS'ta abonelik satın alma ve bildirim iletimi (APNs) ·
+    <a href="https://www.apple.com/legal/privacy/tr/" target="_blank" rel="noopener">Gizlilik politikası</a></li>
+  <li><strong>Google Play Billing</strong> — Android'de abonelik satın alma işlemleri.</li>
+</ul>
+<p>Ödeme bilgileriniz doğrudan Apple veya Google tarafından işlenir; kart bilgileriniz
+hiçbir zaman tarafımıza iletilmez. Ayrıca yürürlükteki mevzuat gereği yasal bir talep
+olması hâlinde veriler yetkili mercilerle paylaşılabilir.</p>
+
+<h2>6. Reklamlar</h2>
+<p>Ücretsiz sürümde Google AdMob reklamları gösterilir.</p>
+<ul>
+  <li><strong>iOS:</strong> yukarıdaki ATT bölümüne bakınız. <em>Ayarlar → Gizlilik ve
+    Güvenlik → Apple Reklamcılığı</em> bölümünden kişiselleştirilmiş reklamları
+    kapatabilirsiniz.</li>
+  <li><strong>Android:</strong> reklam kimliğinizi cihaz ayarlarından sıfırlayabilir veya
+    <em>Ayarlar → Gizlilik → Reklamlar</em> bölümünden kişiselleştirilmiş reklamları
+    kapatabilirsiniz.</li>
+</ul>
+<p><strong>Varlık Pro</strong> aboneliği etkinleştirildiğinde her iki platformda da
+uygulamada reklam gösterilmez.</p>
+
+<h2>7. Bildirimler</h2>
+<p>Bildirim izni verdiğinizde cihazınızın bildirim jetonu ve cihaz kimliği, bildirimi
+doğru cihaza yönlendirebilmek için sunucumuzda saklanır. Bildirimleri uygulama
+ayarlarından veya sistem ayarlarından kapattığınızda bu kayıt devre dışı bırakılır.</p>
+
+<h2>8. Güvenlik ve saklama süresi</h2>
+<ul>
+  <li>Tüm ağ trafiği HTTPS/TLS ile şifrelenir.</li>
+  <li>Bildirim jetonu kayıtları, bildirimler kapatıldığında veya jeton geçersiz hâle
+    geldiğinde silinir.</li>
+  <li>Analitik ve çökme verileri, Firebase'in varsayılan saklama sürelerine tabidir
+    (analitik olayları için 14 ay).</li>
+  <li>Cihazınızdaki portföy verileri yalnızca sizin kontrolünüzdedir.</li>
+</ul>
+
+<h2>9. Çocukların gizliliği</h2>
+<p>Uygulama 13 yaşın altındaki kullanıcılara yönelik değildir ve bilerek bu yaş grubundan
+veri toplamaz.</p>
+
+<h2>10. Haklarınız</h2>
+<p>6698 sayılı KVKK ve GDPR kapsamında; işlenen verileriniz hakkında bilgi talep etme,
+düzeltilmesini veya silinmesini isteme ve işlemeye itiraz etme haklarına sahipsiniz.
+Talebinizi <a href="mailto:buraksenturktr@icloud.com">buraksenturktr@icloud.com</a>
+adresine iletebilirsiniz; en geç 30 gün içinde yanıt verilir.</p>
+<p>Cihazınızdaki tüm verileri uygulamayı kaldırarak silebilirsiniz. Bildirim jetonu
+kaydının silinmesini de aynı adresten talep edebilirsiniz.</p>
+
+<h2>11. Bu politikadaki değişiklikler</h2>
+<p>Politika güncellendiğinde bu sayfa yenilenir ve yukarıdaki "Son güncelleme" tarihi
+değiştirilir. Önemli değişiklikler uygulama içinde ayrıca duyurulur.</p>
+
+<h2>12. İletişim</h2>
+<p>Burak Ahmet Şentürk<br>
+<a href="mailto:buraksenturktr@icloud.com">buraksenturktr@icloud.com</a></p>
+
+</main>
+
+<footer>
+  <a href="index.html">Ana sayfa</a>
+  <a href="terms.html">Kullanım Koşulları</a>
+  <span>© 2026 Burak Ahmet Şentürk</span>
+</footer>
+
+</body>
+</html>
